@@ -166,3 +166,10 @@ VALUES
 
         DELETE FROM Heroltem
         WHERE Hero_id=1;
+
+        SELECT Hero.hero_name,
+        Class.class_name
+        FROM Hero
+        INNER JOIN Class ON
+        Hero.class_id = class.class_id
+        WHERE Class.class_name = 'Archers';
