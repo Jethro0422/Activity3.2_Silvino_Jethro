@@ -159,3 +159,10 @@ VALUES
     ALTER TABLE Item
         ADD item_price
         Numeric(10,2);
+
+    UPDATE Hero
+        Set is_active = false
+        WHERE hero_id=1;
+
+        DELETE FROM Heroltem
+        WHERE Hero_id=1;
